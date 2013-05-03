@@ -1,0 +1,5 @@
+slimlock (0.12-1) unstable; urgency=low
+
+  * Initial release (Closes: #706391)
+
+ -- Samuel Sanchez <sanchez@physik.fu-berlin.de>  Fri, 03 May 2013  16:28:12 +0200

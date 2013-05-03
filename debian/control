@@ -1,0 +1,26 @@
+Source: slimlock
+Section: x11
+Priority: extra
+Maintainer: Samuel Sanchez <sanchez@physik.fu-berlin.de>
+Build-Depends: debhelper (>= 9.0.0), libx11-dev, x11proto-core-dev, libxext-dev, libimlib2-dev, libfreetype6-dev, libpam0g-dev
+Standards-Version: 3.9.4
+Homepage: https://github.com/dannyn/slimlock
+#Vcs-Git: git://git.debian.org/collab-maint/slimlock.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/slimlock.git;a=summary
+
+Package: slimlock
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: slim 
+Description: X display locker based on SLiM and slock
+ Slimlock is a X display locker based on slock (a simple X display locker)
+ and SLiM (a desktop-independent graphical login manager for X11).
+ This package is aimed for users who use SLiM and require a lightweight
+ screen locker with smooth integration into SLIM.
+ .
+ In contrast to slock, which displays a black screen which goes away if the
+ correct password is typed, slimlock displays a lock screen  which matches the
+ login screen (if SLiM is used). Furthermore it supports DPMS and blocking
+ virtual terminal switching.
+ Slimlock reads your SLiM config files and uses the same interface. If you
+ use SLiM already, then it should work for you automatically.
